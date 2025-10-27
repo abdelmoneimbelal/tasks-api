@@ -92,7 +92,7 @@ class CategoryController extends Controller
 
             return response()->json(['message' => 'You don\'t own this resource'], 401);
 
-        }
+        } 
 
         if($category->delete()){
             return response()->json(['message' => 'Resources deleted']);
